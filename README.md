@@ -1,5 +1,6 @@
-**Face Mask Detection using Computer Vision**
-**Overview**
+# Face Mask Detection using Computer Vision
+
+## Overview
 
 This project involves training machine learning and deep learning models for face mask detection. The models classify images into three categories:
 
@@ -11,7 +12,7 @@ Class 2: Wearing a mask incorrectly
 
 Additionally, a video was used to test the best-performing model, which detects faces and classifies mask usage in real time.
 
-**Dataset**
+## Dataset
 
 The dataset consists of:
 
@@ -26,11 +27,11 @@ No Mask (Class 0): 376 images
 
 Incorrect Mask (Class 2): 78 images
 
-**Implemented Methods**
+## Implemented Methods
 
-**Pre-processing**
+### Pre-processing
 
-**For Traditional ML Models (SVM & MLP):**
+#### For Traditional ML Models (SVM & MLP):
 
 Images resized to (128, 128, 3)
 
@@ -52,7 +53,7 @@ CNN: [-1, 1]
 
 MobileNetV2: mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]
 
-**Model Training**
+### Model Training
 
 **SVM:** Grid search was used to find optimal hyperparameters (C, kernel type, and gamma values). Class weights were set to "balanced".
 
@@ -92,7 +93,7 @@ Bounding boxes with labels were drawn on faces:
 
 Animated the processed frames into a video output
 
-**Results**
+### Results
 
 **Qualitative Results**
 
@@ -115,7 +116,7 @@ Some incorrect classifications occurred when the mask was worn on the chin (pred
 
 MTCNN showed bounding box inconsistencies in some frames.
 
-**Conclusion**
+## Conclusion
 
 MobileNetV2 was the best-performing model, with the highest accuracy and best generalization.
 
