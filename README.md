@@ -1,3 +1,5 @@
+
+
 # Face Mask Detection using Computer Vision
 
 ## Overview
@@ -106,8 +108,14 @@ Animated the processed frames into a video output
 - MobileNetV2: Best performance, correctly classifying all classes despite the imbalanced dataset.
 
 **Quantitative Results**
----To be write--
 
+| Model          | Test Accuracy (%) | Precision (%) | Recall (%) | F1 Score (%) | Training Time | Model Size |  
+|----------------|-------------------|---------------|------------|--------------|---------------|------------|  
+| SVM + HOG      | 90.17             | 89.2          | 90.17      | 89.26        | 0m 5s         | 13.3 MB    |  
+| MLP + HOG      | 87.33             | 86.8          | 87.33      | 86.94        | 0m 18s        | 3.6 MB     |  
+| CNN            | 94.1              | 93.58         | 94.1       | 93.77        | 10m 29s       | 16.1 MB    |  
+| MobileNetV2    | 96.72             | 96.77         | 96.72      | 96.72        | 45m 28s       | 8.7 MB     |  
+ 
 **Video Results**
 
 - MobileNetV2 successfully classified all three classes in different orientations.
